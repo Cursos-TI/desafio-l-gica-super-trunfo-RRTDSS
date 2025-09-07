@@ -36,7 +36,7 @@ int main(){
     fgets(nomecidade, sizeof(nomecidade), stdin);
     
     printf("Digite a População: ");
-    scanf("%u", &populacao);
+    scanf("%lu", &populacao);
 
     printf("Digite a Area (tamanho da cidade em km): ");
     scanf("%f", &area);
@@ -72,7 +72,7 @@ int main(){
     fgets(nomecidade2, sizeof(nomecidade2), stdin);
 
     printf("Digite a População da carta2: ");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Digite a Area (tamanho da cidade em km) da carta2: ");
     scanf("%f", &area2);
@@ -99,7 +99,7 @@ int main(){
     printf("Estado: %s", estado);
     printf("Código: %s\n", codcart);
     printf("Nome da Cidade: %s", nomecidade);
-    printf("População: %d\n", populacao);
+    printf("População: %lu\n", populacao);
     printf("Área: %.2f\n", area);
     printf("PIB: %.2f\n", pib);
     printf("Numero de Pontos Turisticos: %d\n", npt);
@@ -114,7 +114,7 @@ int main(){
     printf("Estado: %s", estado2);
     printf("Código: %s\n", codcart2);
     printf("Nome da Cidade: %s", nomecidade2);
-    printf("População: %d\n", populacao2);
+    printf("População: %lu\n", populacao2);
     printf("Área: %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", npt2);
