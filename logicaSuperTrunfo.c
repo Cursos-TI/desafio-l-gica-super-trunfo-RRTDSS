@@ -19,6 +19,7 @@ int main(){
     int pontos1 = 0;
     int pontos2 = 0;
     int menu;
+    
 
 
     // ENTRADA DE DADOS CARTA 1
@@ -228,52 +229,29 @@ int main(){
     
     switch (menu){
         // Menu População
-    case 1:
-        if (populacao > populacao2){
-            printf("A População da Carta 1 Venceu.\n");
-        } else {
-            printf("A População da Carta 2 Venceu\n");
-        }  
+        case 1:
+        populacao > populacao2 ? printf("A População da Carta 1 Venceu.\n") : printf("A População da Carta 1 Venceu.\n");
         
         break;
 
         // Menu Area
         case 2:
-            if (area > area2){
-                printf("A Área da Carta 1 Venceu\n");
-            } else {
-                printf("A Área da Carta 2 Venceu\n");
-            }
+        area > area2 ? printf("A Área da Carta 1 Venceu\n") : printf("A Área da Carta 2 Venceu\n");
 
         break;
     
         case 3:
-             if (pib > pib2){
-                printf("O PIB da Carta 1 Venceu\n");
-
-             } else {
-                printf("O PIB da Carta 2 Venceu\n");
-             }
+        pib > pib2 ? printf("O PIB da Carta 1 Venceu\n") : printf("O PIB da Carta 2 Venceu\n");
 
         break;
              
         case 4:
-             if (npt > npt2){
-                printf("O Número de pontos turísticos da Carta 1 Venceu\n");
-
-             } else {
-                printf("O Número de pontos turísticos da Carta 2 Venceu\n");
-             }
+        npt > npt2 ? printf("O Número de pontos turísticos da Carta 1 Venceu\n") : printf("O Número de pontos turísticos da Carta 2 Venceu\n");
 
         break;
 
         case 5:
-             if (DP < DP2){
-                printf("A Densidade Populacional da Carta 1 Venceu\n");
-
-             } else {
-                printf("A Densidade Populacional da Carta 2 Venceu\n");
-             }
+        DP < DP2 ? printf("A Densidade Populacional da Carta 1 Venceu\n") : printf("A Densidade Populacional da Carta 2 Venceu\n");
 
         break;
 
@@ -282,9 +260,6 @@ int main(){
 
         break;
     }
-
-
-    
 
     // Pontos
     printf("Pontos Carta 1: %d\n", pontos1);
